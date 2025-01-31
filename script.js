@@ -131,14 +131,18 @@ function AfficherGagnant(){
     let resultat = DeterminerGagnant();
     leGagnant.textContent = resultat;
 
+    //Changement de la couleur de fond en fonction du gagnant
+    //Si le joueur gagne
     if (resultat === "Joueur"){
         let divJoueur = document.querySelector('.divJoueur');
         divJoueur.setAttribute('class', 'col-6 bg-success divJoueur text-white rounded');
     }
+    //Si l'ordinateur gagne
     else if (resultat === "Ordinateur"){
         let divOrdinateur = document.querySelector('.divOrdinateur');
         divOrdinateur.setAttribute('class', 'col-6 bg-success divOrdinateur text-white rounded');
     }
+    //Si égalité
     else {
         leJeu.setAttribute('class', 'bg-danger rounded row text-center text-white');
     }
