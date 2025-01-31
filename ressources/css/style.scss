@@ -1,15 +1,20 @@
+
+//Classe permettant de faire un compte à rebours pour le joueur
 .AnimateCompteARebourJoueur{
     animation: CompteARebours1 1s infinite;
 }
 
+//Classe permettant de faire un compte à rebours pour l'ordinateur
 .AnimateCompteARebourOrdinateur{
     animation: CompteARebours2 1s infinite;
 }
 
+//Classe permettant le rotation d'image du compte a rebour pour l'ordinateur
 .CompteARebourOrdinateur {
     transform: rotateY(3.142rad);
 }
 
+//Animation du compte à rebours pour le joueur
 @keyframes CompteARebours1 {
     0% {
         transform: translateY(0);
@@ -22,6 +27,7 @@
     }
 }
 
+//Animation du compte à rebours pour l'ordinateur
 @keyframes CompteARebours2 {
     0% {
         transform: rotateY(3.142rad) translateY(0);
