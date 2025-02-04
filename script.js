@@ -50,7 +50,7 @@ function CommencerLaPartie(){
     //Création de l'image du joueur
     let ImageJoueur = document.createElement('img');
     ImageJoueur.setAttribute('src', `/ressources/img/Roche.png`);
-    ImageJoueur.setAttribute('class', 'img-fluid CompteARebourJoueur');
+    ImageJoueur.setAttribute('class', 'img-fluid CompteARebourJoueur w-75');
     divJoueur.appendChild(ImageJoueur);
 
     //Création de la div de l'ordinateur
@@ -65,7 +65,7 @@ function CommencerLaPartie(){
     //Création de l'image de l'ordinateur
     let ImageOrdinateur = document.createElement('img');
     ImageOrdinateur.setAttribute('src', `/ressources/img/Roche.png`);
-    ImageOrdinateur.setAttribute('class', 'img-fluid CompteARebourOrdinateur');
+    ImageOrdinateur.setAttribute('class', 'img-fluid CompteARebourOrdinateur w-75');
     divOrdinateur.appendChild(ImageOrdinateur);
 
     //Création du bouton recommencer
